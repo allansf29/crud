@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/button.css">
+    <link rel="stylesheet" href="./CSS/records.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <script src="https://kit.fontawesome.com/674bbd670c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+</head>
+<body>
+  <header>
+    <section>
+        <nav>
+            <div class="nav-center">
+              <div class="nav-header">
+                <img src="" alt="" class="logo"  />
+                <button class="nav-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+              <ul class="links">
+                <li><a class="header-Principal-link" href="#clientes">Cadastro de Clientes</a></li>
+              </ul>
+              <!-- <button class="btn-dark"> 
+                <i class="fa-solid fa-moon"></i>
+              </button> -->
+            </div>
+          </nav>
+    </section>
+  </header>
+  <main>
+    <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+    <table id="tableClient" class="records">
+      <thead>
+        <tr>
+          <th>nome</th>
+          <th>E-mail</th>
+          <th>Celular</th>
+          <th>Cidade</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2>Novo Cliente</h2>
+          <span class="modal-close" id="modal-close">&#10006;</span>
+        </header>
+        <form id="form" class="modal-form">
+          <input id="nome" data-index="new" type="text" class="modal-field" placeholder="Nome do Cliente" required>
+          <input id="email" type="email" class="modal-field" placeholder="E-mail do Cliente" required>
+          <input id="celular" type="text" class="modal-field" placeholder="Celular do Cliente" required>
+          <input id="cidade" type="text" class="modal-field" placeholder="Cidade do Cliente" required>
+        </form>
+        <footer class="modal-footer">
+          <button id="modal-save" class="button white">Salvar</button>
+          <button id="modal-cancel" class="button blue">Cancelar</button>
+
+        </footer>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+<script src="./JavaScript/navbar.js"></script>
+<script src="./JavaScript/dark-mode.js"></script>
+<script src="./JavaScript/modal.js"></script>
+<script src="./JavaScript/crud.js"></script>
+</body>
+</html>
